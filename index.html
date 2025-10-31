@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lirik Lagu - Animasi Bola Pantul</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="judul">🎵 Lirik Lagu & Animasi Bola Pantul 🎵</h1>
+
+  <div class="container">
+    <!-- Kanvas untuk animasi -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Panel kontrol -->
+    <div class="panel">
+      <h3>Kontrol Animasi</h3>
+
+      <label>Kecepatan Global</label>
+      <input type="range" id="speed" min="0.2" max="3" step="0.1" value="1">
+
+      <label>Gaya Gravitasi</label>
+      <input type="range" id="gravity" min="0" max="1" step="0.05" value="0.25">
+
+      <label>Gesekan (Friction)</label>
+      <input type="range" id="friction" min="0.8" max="0.999" step="0.001" value="0.99">
+
+      <label>Ukuran Bola</label>
+      <input type="range" id="ballSize" min="5" max="40" step="1" value="20">
+
+      <button id="addBall">Tambah Bola</button>
+      <button id="clearBall">Hapus Semua</button>
+    </div>
+  </div>
+
+  <!-- Lirik lagu -->
+  <div class="lirik">
+    <p id="teksLirik">I'm wide awake...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
